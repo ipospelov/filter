@@ -1,4 +1,4 @@
-package nsu.cg;
+package ru.nsu.cg;
 
 import javax.swing.*;
 import java.awt.*;
@@ -69,8 +69,10 @@ public class MainFrame extends JFrame {
 		JMenuItem item = new JMenuItem(title);
 		item.setMnemonic(mnemonic);
 		item.setToolTipText(tooltip);
-		if(icon != null)
-			item.setIcon(new ImageIcon(getClass().getResource("resources/"+icon), title));
+		if(icon != null) {
+			//System.out.println(getClass().getResource("resources/"));
+			item.setIcon(new ImageIcon(getClass().getResource("resources/" + icon), title));
+		}
 		final Method method = getClass().getMethod(actionMethod);
 		item.addActionListener(new ActionListener() {
 			

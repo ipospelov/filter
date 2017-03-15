@@ -1,4 +1,4 @@
-package nsu.cg;
+package ru.nsu.cg;
 
 import javax.swing.filechooser.FileFilter;
 import java.io.File;
